@@ -1,7 +1,7 @@
-export default function Task() {
+export default function Task(props) {
     return (
         <li className="border d-flex justify-content-between align-items-center  p-2 m-2">
-            <div className="p-3">Ma tâche 1</div>
+            <div className="p-3">{props.taskContent}</div>
             <button className="btn btn-danger p-2 h-50">Supprimer</button>
         </li>
     )
